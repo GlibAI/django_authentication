@@ -11,7 +11,7 @@ setuptools.setup(
     description="single auth for all applications.",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/GlibAI/django-azure-backup/",
+    url="https://github.com/GlibAI/django_authentication",
     packages=setuptools.find_packages(exclude=['django_authentication', 'manage.py']),
     classifiers=[
         "Programming Language :: Python :: 3",
