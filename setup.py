@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="django-single-auth",
-    version="0.0.1",
+    version="0.0.4",
     author="Ajit Mourya",
     author_email="ajit@glib.ai",
     description="single auth for all applications.",
@@ -18,5 +18,11 @@ setuptools.setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-    python_requires='>=3.6'
+    python_requires='>=3.6',
+    install_requires=[
+        'cryptography==3.4.6',
+        'urllib3==1.26.3'
+    ],
+    include_package_data=True,
+    zip_safe=False
 )
